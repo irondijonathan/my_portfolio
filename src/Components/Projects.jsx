@@ -5,10 +5,28 @@ import { MdContentPasteSearch } from "react-icons/md";
 const Projects = (props) => {
   const projects = [
     {
-      name: "Web Scraper for e-commerce sites",
+      name: "Reside Me",
+      icon: <BsCodeSlash size={40} color="#fff" />,
+      description:
+        "I have developed a web application that facilitates property listing, leasing, letting, and renting. The software efficiently aggregates property information from various sources and stores it in a centralized database. Through the application's API, users can display property listings in a highly customizable format, tailored to meet the specific needs of their organization. Additionally, the software ensures seamless property management and an enhanced user experience for property seekers and owners alike.",
+    },
+    {
+      name: "Heny",
+      icon: <BsCodeSlash size={40} color="#fff" />,
+      description:
+        "I assisted them in automating their entire data collection process, including provisioning the necessary infrastructure for the system. Additionally, I contributed to the development of their personalization engine, which enhances their ability to provide customized and tailored experiences to their users. The combination of automation, infrastructure setup, and advanced personalization capabilities has significantly improved the efficiency and effectiveness of their data-driven operations.",
+    },
+    {
+      name: "Ameriless",
       icon: <BsCodeSlash size={40} color="#fff" />,
       description:
         "I have created a software solution that aggregates product information, including prices and images, from multiple e-commerce platforms and stores it in a centralized database. The software provides an API that enables the display of the various products in a highly customizable format, allowing me to tailor the solution to meet the specific needs of your organization.",
+    },
+    {
+      name: "My Mailer",
+      icon: <BsBriefcaseFill size={40} color="#fff" />,
+      description:
+        "I have created a powerful software solution designed to assist businesses and email marketers in automating their email sending process. The software enables seamless and efficient sending of bulk emails to engage with customers, prospective customers, and clients. Moreover, it prioritizes the highest security and data privacy policies, ensuring that sensitive information remains protected and confidential. With this solution, businesses can enhance their communication strategies and establish stronger relationships with their target audience while adhering to strict security and privacy standards.",
     },
     {
       name: "Automated Content creation for Social media",
@@ -16,12 +34,8 @@ const Projects = (props) => {
       description:
         "This software boasts the capability to generate and publish high-quality content for your social media accounts, tailored to your specific niche. The software seamlessly blends video and audio elements to produce a cohesive and impactful final product, which is then scheduled for posting on your social media platform at the preferred timing and frequency specified by the user.",
     },
-    {
-      name: "Order Management System for food",
-      icon: <BsBriefcaseFill size={40} color="#fff" />,
-      description:
-        "I have developed a software solution that provides real-time tracking and monitoring capabilities for food preparation. This allows customers to have visibility into the status of their food, enabling them to make informed decisions and have a clear understanding of when to expect their meal.",
-    },
+   
+   
   ];
   return (
     <section className="projects">
@@ -44,6 +58,19 @@ const Projects = (props) => {
           <h2>{projects[2].name}</h2>
           <p>{projects[2].description}</p>
         </div>
+
+        <div className="card">
+          <div className="project-icons"> {projects[3].icon}</div>
+          <h2>{projects[3].name}</h2>
+          <p>{projects[3].description}</p>
+        </div>
+
+        <div className="card">
+          <div className="project-icons"> {projects[3].icon}</div>
+          <h2>{projects[4].name}</h2>
+          <p>{projects[4].description}</p>
+        </div>
+        
       </div>
     </section>
   );
