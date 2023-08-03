@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../images/main-img.jpg";
+import profile from "../images/Me.jpg";
 
 const About = (props) => {
   const profilePicture = <img src={profile} alt="my-profile" />;
