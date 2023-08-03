@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    background: url("./images/background_small.jpg"); /* New background image for smaller screens */
+    background: url("./images/background_small1.jpg"); /* New background image for smaller screens */
     background-position: center;
     background-size: cover;
     height: 100vh;
